@@ -23,7 +23,7 @@ body.muda .container-login .mude-cor{
     background-color: #00010e00;
 }
 body.muda .container-login .login-left,body.muda .container-login .login-rigth{
-    background-color: whitesmoke;
+    background-color: rgb(226, 226, 226);
 }
 body.muda .container-login .login-rigth h2{
     color: #6b99c4;
@@ -57,7 +57,7 @@ body.muda .container-login .login-rigth .login-pass #password{
     cursor: pointer;
 }
 .container-login .mude-cor img{
-    width: 20px;
+    width: 30px;
 }
 .container-login .login-left{
     width: 50vw;
@@ -99,7 +99,7 @@ body.muda .container-login .login-rigth .login-pass #password{
 }
 .container-login .login-rigth{
     width: 50vw;
-    background-color: #00010e;
+    background-color: #00010e00;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +179,17 @@ body.muda .container-login .login-rigth .login-pass #password{
     }
 }
 @media screen and (max-width:550px) {
-
+    body{
+        background-image: linear-gradient(to bottom,#00010e,transparent),url('img/bg-black.jpg');
+        background-size: cover;
+    }
+    body.muda{
+        background-image: linear-gradient(to bottom,rgb(194, 194, 194),transparent),url('img/bg-white.jpg');
+        background-size: cover;
+    }
+    body.muda .container-login .login-left,body.muda .container-login .login-rigth{
+        background-color: rgba(226, 226, 226, 0);
+    }
     .container-login{
         flex-direction: column;
     }
@@ -190,6 +200,8 @@ body.muda .container-login .login-rigth .login-pass #password{
         width: 100vw;
         background-color: #00010e;
         flex: 1;
+        background-color: transparent;
+        margin-bottom: 50px;
     }
     .container-login .login-left .text-login{
         display: none;
@@ -201,6 +213,7 @@ body.muda .container-login .login-rigth .login-pass #password{
         width: 100vw;
         background-color: #00010e;
         flex: 1;
+        background-color: transparent;
     }
     .container-login .login-rigth h2{
         font-size: 24px;

@@ -2,7 +2,7 @@
     var btn = document.querySelector('.mude-cor');
     function mudarCor(){
        if(btn.classList.contains('white')){
-        document.body.classList.remove('muda')
+        document.body.classList.remove('muda');
         btn.classList.remove('white');
         var image = document.querySelector('.image');
         image.src = 'img/sun.png';
